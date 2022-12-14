@@ -131,9 +131,15 @@
     <div class="container m-3">
         <h3>Modal Example</h3>
         <p>Click on the button to open the modal.</p>
-        <button type="button" class="btn btn-outline-danger" data-bs-toggle="modal tooltip" data-bs-target="#myModal" title="OPEN MODEL">
+        <button type="button" class="btn btn-outline-danger" data-bs-toggle="modal" data-bs-toggle="tooltip" data-bs-target="#myModal" title="OPEN MODEL">
             OPEN
         </button>
+        <div class="container d-flex justify-content-center">
+            <a class="pe-5" href="#" data-bs-toggle="tooltip" data-bs-placement="top" title="Hooray!">Top</a>
+            <a class="pe-5" href="#" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Hooray!">Bottom</a>
+            <a class="pe-5" href="#" data-bs-toggle="tooltip" data-bs-placement="left" title="Hooray!">Left</a>
+            <a class="pe-5" href="#" data-bs-toggle="tooltip" data-bs-placement="right" title="Hooray!">Right</a>
+        </div>
     </div>
     <!-- The Modal -->
     <div class="modal fade" id="myModal">
@@ -157,7 +163,6 @@
             </div>
         </div>
     </div>
-
 
 
     <script src="script.js"></script>
