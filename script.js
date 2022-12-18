@@ -10,10 +10,17 @@
 //   return new bootstrap.Popover(popoverTriggerEl)
 // })
 
-document.getElementById("toastbtn").onclick = function () {
-  let toastElList = [].slice.call(document.querySelectorAll('.toast'))
-  let toastList = toastElList.map(function(toastEl){
-    return new bootstrap.Toast(toastEl)
-  })
-  toastList.forEach(toast => toast.show())
-};
+// document.getElementById("toastbtn").onclick = function () {
+//   let toastElList = [].slice.call(document.querySelectorAll('.toast'))
+//   let toastList = toastElList.map(function(toastEl){
+//     return new bootstrap.Toast(toastEl)
+//   })
+//   toastList.forEach(toast => toast.show())
+// };
+
+function myBtn() {
+  let x = document.getElementsByClassName("city");
+  for (let i = 0; i < x.length; i++) {
+    x[i].style.display="none";
+  }
+}
