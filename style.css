@@ -1,3 +1,7 @@
 .card_style{
     width: 400px;
 }
+
+body{
+    position: relative;
+}
