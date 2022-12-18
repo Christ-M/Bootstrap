@@ -71,10 +71,73 @@
             <label for="myColor" class="form-label">Color picker</label>
             <input type="color" class="form-control form-control-color" id="myColor" value="#CCCCCC" title="Choose a color">
           </form>
+          <br>
+          <h2>Select Menu</h2>
+          <p>To style a select menu in Bootstrap 5, add the .form-select class to the select element:</p>
+          <form action="/action_page.php">
+            <label for="sel1" class="form-label">Select list (select one):</label>
+            <select class="form-select" id="sel1" name="sellist1">
+              <option>1</option>
+              <option>2</option>
+              <option>3</option>
+              <option>4</option>
+            </select>
+            <br>
+            
+            <label for="sel2" class="form-label">Mutiple select list (hold shift to select more than one):</label>
+            <select multiple class="form-select" id="sel2" name="sellist2">
+              <option>1</option>
+              <option>2</option>
+              <option>3</option>
+              <option>4</option>
+              <option>5</option>
+            </select>
+            <button type="submit" class="btn btn-primary mt-3">Submit</button>
+          </form>
+          <div class="form-floating mt-3 mb-3">
+            <input
+              type="text"
+              class="form-control" name="formId1" id="formId1" placeholder="">
+            <label for="formId1">Name</label>
+          </div>
+          <div class="form-floating mt-3 mb-3">
+            <textarea class="form-control" id="comment" name="text" placeholder="Comment goes here"></textarea>
+            <label for="formId1">Message</label>
         </div>
-        
-        </body>
-        </html>
+        <div class="form-floating">
+            <select class="form-select" id="sel1" name="sellist">
+              <option>1</option>
+              <option>2</option>
+              <option>3</option>
+              <option>4</option>
+            </select>
+            <label for="sel1" class="form-label">Select list (select one):</label>
+          </div> 
+          <h3>Form Validation</h3>
+          <p>Try to submit the form.</p>
+            
+          <form action="/action_page.php" class="was-validated">
+            <div class="mb-3 mt-3">
+              <label for="uname" class="form-label">Username:</label>
+              <input type="text" class="form-control" id="uname" placeholder="Enter username" name="uname" required>
+              <div class="valid-feedback">Valid.</div>
+              <div class="invalid-feedback">Please fill out this field.</div>
+            </div>
+            <div class="mb-3">
+              <label for="pwd" class="form-label">Password:</label>
+              <input type="password" class="form-control" id="pwd" placeholder="Enter password" name="pswd" required>
+              <div class="valid-feedback">Valid.</div>
+              <div class="invalid-feedback">Please fill out this field.</div>
+            </div>
+            <div class="form-check mb-3">
+              <input class="form-check-input" type="checkbox" id="myCheck"  name="remember" required>
+              <label class="form-check-label" for="myCheck">I agree on blabla.</label>
+              <div class="valid-feedback">Valid.</div>
+              <div class="invalid-feedback">Check this checkbox to continue.</div>
+            </div>
+          <button type="submit" class="btn btn-primary">Submit</button>
+          </form>
+        </div>
     </div>
 
     <script src="script.js"></script>
