@@ -14,3 +14,16 @@ body{
 #section3{
     padding: 100px 20px;
 }
+#section4{
+    padding: 100px 20px;
+}
+span {
+    display: inline-block;
+    width: 70px;
+    height: 70px;
+    margin: 6px;
+    background-color: #f9f9f9;
+  }
+#bgc{
+    background-color: rgb(145, 145, 145);
+}
