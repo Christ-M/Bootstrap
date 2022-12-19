@@ -24,3 +24,10 @@ function myBtn() {
     x[i].style.display="none";
   }
 }
+
+document.getElementById('demo1').innerHTML = "Hello JavaScript!";
+function changeTxt() {
+  document.getElementById('demo2').style.fontSize = "25px";
+  document.getElementById('demo2').style.color = "lightblue";
+  document.getElementById('demo2').style.backgroundColor = "lightcoral";
+}
