@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en-us">
 <head>
     <meta charset="UTF-8">
     <meta name="keywords" content="html, css, javaScript">
@@ -12,7 +12,81 @@
     <title>Layout Web practice</title>
 </head>
 <body>
-    
+    <!-- Header Start -->
+    <header>
+        <h2>Drummers</h2>
+    </header>
+    <!-- Header End -->
+
+    <!-- Section Start -->
+    <section>
+    <!-- Nav Start -->
+        <nav>
+            <ul>
+                <li><a href="#">Christ Minassian</a></li>
+                <li><a href="#">Anisa Shahbazian</a></li>
+                <li><a href="#">Arutin Mehrabi</a></li>
+                <li><a href="#">Aramikmartirossian</a></li>
+            </ul>
+        </nav>
+    <!-- Nav ENd -->
+    <!-- Article Start -->
+        <article>
+            <h1>London</h1>
+
+            <p>London is the capital city of England. It is the most populous city in the  United Kingdom, with a metropolitan area of over 13 million inhabitants.</p>
+
+            <p>Standing on the River Thames, London has been a major settlement for two millennia, its history going back to its founding by the Romans, who named it Londinium.</p>
+            <br>
+            <form action="#">
+                <label for="cars">Choose a car</label>
+                <select name="cars" id="cars">
+                    <option value="volvo">Volvo</option>
+                    <option value="fiat">Fiat</option>
+                    <option value="audio" selected>Audio</option>
+                    <option value="bmw">Bmw</option>
+                </select>
+                <input type="submit">
+            </form>
+            <br>
+            <form action="#">
+                <fieldset>
+                    <legend>Information</legend>
+                    <label for="fname">First name:</label><br>
+                    <input type="text" id="fname" name="fname" value="John"><br>
+                    <label for="lname">Last name:</label><br>
+                    <input type="text" id="lname" name="lname" value="Doe"><br><br>
+                    <input type="submit" value="Submit">
+                </fieldset>
+            </form>
+            <br>
+            <form action="#" oninput="x.value=parseInt(a.value)+parseInt(b.value)">
+                0
+                <input type="range" id="a" name="a" value="50">
+                100 + 
+                <input type="number" name="b" id="b" value="50">
+                =
+                <output name="x" for="a b"></output>
+                <br><br>
+                <input type="submit">
+            </form>
+        </article>
+    <!-- Article End -->
+    </section>
+    <!-- Section End -->
+
+    <!-- Footer Start -->
+    <footer>
+        <p>Footer</p>
+        <form action="/action_page.php">
+            <textarea name="message" rows="5" cols="100">The cat was playing in the garden.</textarea>
+            <br><br>
+            <input type="submit">
+          </form>
+    </footer>
+    <!-- Footer End -->
+
+
     <script src="layout.js"></script>
 </body>
 </html>
